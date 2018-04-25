@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <style>
+	#object5 {height: 1000px;}
+    </style>
+  </head>
+  <body>
+    <a-scene>
+    	<a-assets>
+
+		<img id = "my-image" src= "trees.jpg" />
+
+		<a-asset-item id="object2" src="model2/scene.gltf"></a-asset-item>
+		             
+		<a-asset-item id="object3" src="model3/scene.gltf"></a-asset-item>
+		 
+		<a-asset-item id="object4" src="model4/scene.gltf"></a-asset-item>
+		
+		<a-asset-item id="object5" src="model5/scene.gltf"></a-asset-item>
+		
+    	</a-assets> 
+
+	<a-entity glft-model="#object2" position="0 0 0" scale="1 1 1"></a-entity>
+	
+	<a-entity glft-model="#object3" position="0 0 0" scale="1 1 1"></a-entity>
+
+	<a-entity glft-model="#object4" position="0 0 0" scale="1 1 1"></a-entity>
+
+	<a-entity glft-model="#object5" position="0 0 0" scale="1 1 1"></a-entity>
+
+	<a-curvedimage src= "#my-image" height= "15" radius= "5" theta-length="360" rotation= "0 150 0" scale = "0.5 0.5 0.5" position= "0 1 0"></a-curvedimage>
+
+	<a-gltf-model src="#object2" scale="1 1 1" position="100 100 100" rotation="0 0" visible=""></a-gltf-model>
+0
+	<a-gltf-model src="#object3" scale="1.5 1.5 1.5" position="5 0 0" rotation="0 120" visible=""></a-gltf-model>
+
+	<a-gltf-model src="#object4" scale="1 1 1" position="-1 0 -2" rotation="0 15" visible=""></a-gltf-model>
+
+	<a-gltf-model src="#object5" scale="1.5 1.5 1.5" position="0 1 -2.2" rotation="0 0" visible=""></a-gltf-model>
+
+<!--	
+	<a-sky color= "lightblue"></a-sky>
+-->
+    </a-scene>
+  </body>
+</html>
+
+<!-- this is a comment -->
