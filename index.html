@@ -8,13 +8,10 @@
   </head>
   <body>
     <a-scene>
+	    <a-sky src="room6.jpg" rotation="0 -130 0"></a-sky>
     	<a-assets>
 
 		<img id = "my-image" src= "room6.jpg" />
-
-		<a-asset-item id="object2" src="model2/scene.gltf"></a-asset-item>
-		             
-		<a-asset-item id="object3" src="model3/scene.gltf"></a-asset-item>
 		 
 		<a-asset-item id="object4" src="model4/scene.gltf"></a-asset-item>
 		
@@ -22,29 +19,14 @@
 		
     	</a-assets> 
 
-	<a-entity glft-model="#object2" position="0 0 0" scale="1 1 1"></a-entity>
-	
-	<a-entity glft-model="#object3" position="0 0 0" scale="1 1 1"></a-entity>
+	<a-entity glft-model="#object4"></a-entity>
 
-	<a-entity glft-model="#object4" position="0 0 0" scale="1 1 1"></a-entity>
-
-	<a-entity glft-model="#object5" position="0 0 0" scale="1 1 1"></a-entity>
-
-	<a-curvedimage src= "#my-image" height= "45" radius= "12" theta-length="360" rotation= "0 150 0" scale = "0.5 0.5 0.5" position= "0 1 0"></a-curvedimage>
-
-	<a-gltf-model src="#object2" scale="1 1 1" position="100 100 100" rotation="0 0" visible=""></a-gltf-model>
-
-	<a-gltf-model src="#object3" scale="1.5 1.5 1.5" position="5 0 0" rotation="0 120" visible=""></a-gltf-model>
+	<a-entity glft-model="#object5"></a-entity>
 
 	<a-gltf-model src="#object4" scale="1 1 1" position="-1 0 -2" rotation="0 15" visible=""></a-gltf-model>
 
 	<a-gltf-model src="#object5" scale="1.5 1.5 1.5" position="0 1 -2.2" rotation="0 0" visible=""></a-gltf-model>
 
-<!--	
-	<a-sky color= "lightblue"></a-sky>
--->
     </a-scene>
   </body>
 </html>
-
-<!-- this is a comment -->
