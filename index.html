@@ -8,25 +8,36 @@
   </head>
   <body>
     <a-scene>
-	    <a-sky src="room6.jpg" rotation="0 -130 0"></a-sky>
+	    <a-sky src="room6.jpg" rotation="0 -130 0" shadow></a-sky>
+
     	<a-assets>
 
 		<img id = "my-image" src= "room6.jpg" />
-		 
+
+		<a-sound src="url(water.mp3)" autoplay="true" position="0 0 0" loop="true" volume="0.5"></a-sound>
+	 
 		<a-asset-item id="object4" src="model4/scene.gltf"></a-asset-item>
 		
 		<a-asset-item id="object5" src="model5/scene.gltf"></a-asset-item>
-		
+<!--
+		<a-asset-item id="object7" src="model7/scene.gltf"></a-asset-item>
+-->
     	</a-assets> 
 
-	<a-entity glft-model="#object4"></a-entity>
-
-	<a-entity glft-model="#object5"></a-entity>
-
-	<a-gltf-model src="#object4" scale="1 1 1" position="-1 0 -2" rotation="0 15" visible=""></a-gltf-model>
+	<a-entity gltf-model="#object4" position="-1 0 -2">
+        <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000" easing="linear" repeat="indefinite"></a-animation>
+      
+      </a-entity>
 
 	<a-gltf-model src="#object5" scale="1.5 1.5 1.5" position="0 1 -2.2" rotation="0 0" visible=""></a-gltf-model>
+<!--
+	<a-gltf-model src="#object7" scale="1 1 1" position="2 1 -2" rotation="0 -55" visible=""></a-gltf-model>
 
+        <a-entity gltf-model="#object7" position="2 1 -2">
+        <a-animation attribute="rotation" from="0 -40 0" to="0 -65 0" dur="15000" easing="linear" repeat="indefinite"></a-animation>
+      
+      </a-entity>
+-->	
     </a-scene>
   </body>
 </html>
